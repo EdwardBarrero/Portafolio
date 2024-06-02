@@ -41,6 +41,9 @@ body{
   #first-image {
     display: none;
   }
+  #section-info > header {
+    justify-content: center;
+  }
 }
 
 #person-info > #profession {
@@ -167,10 +170,11 @@ button:hover {
 }
 
 .experiencie > #skills > img {
-  margin: 0 20px;
+  margin: 20px 20px 0px 20px;
 }
 
 .experiencie > #skills > h4 {
   font-weight: 500;
   color: #1ABC9C;
+  margin-bottom: 0;
 }
