@@ -1,0 +1,177 @@
+body{
+  padding: 0;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  display: grid;
+  place-items: center;
+  /* background-color: #696969; */
+  background-color: #FFFFFF;
+}
+
+#section-info {
+  /* background-color: #5c6476; */
+  background-color: #2F2F2F;
+  width: 100%;
+}
+
+#person-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#section-info > header {
+  margin: 0 auto;
+  text-align: center;
+  min-height: 400px;
+  max-width: 960px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#first-image {
+  width: 220px;
+  height: 300px;
+  border-radius: 5px;
+  margin: auto 0;
+}
+
+@media (width < 800px) {
+  #first-image {
+    display: none;
+  }
+}
+
+#person-info > #profession {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  /* color: rgb(173 246 99); */
+  color: #1ABC9C;
+}
+
+#person-info > #name {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+#buttons {
+  display: flex;
+  margin: 0 auto;
+}
+
+#buttons > a {
+  width: fit-content;
+  height: fit-content;
+}
+
+button {
+  border-radius: 5px;
+  padding: 8px;
+  margin: 40px 10px 0 10px;
+  /* border: 1px solid #b8ea53; */
+  border: 1px solid #1ABC9C;
+  background-color: transparent;
+  width: 100px;
+  /* color: #b8ea53; */
+  color: #1ABC9C;
+  transition: 0.3s color, 0.3s background-color;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  /* background-color: #b8ea53; */
+  background-color: #1ABC9C;
+  color: black;
+  cursor: pointer;
+}
+
+#experiencie-section {
+  max-width: 960px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#experiencie-section > h2 {
+  margin: 50px 0 0 0;
+  color: #1ABC9C;
+  font-weight: 100;
+}
+
+.experiencie {
+  margin: 30px 0;
+  /* background-color: #9a9a9a; */
+  background-color: #ECF0F1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.experiencie > header {
+  display: flex;
+  align-items: center;
+}
+
+.experiencie > header > img {
+  width: 50px;
+  border-radius: 5px;
+  margin: auto 0;
+}
+
+.experiencie > header > div > .company-name {
+  /* color: white; */
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0 20px;
+  color: #1ABC9C;
+  display: block;
+  text-align: start;
+}
+
+.experiencie > header > div > .date {
+  /* color: white; */
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0 20px;
+  color: #1ABC9C;
+  display: block;
+  text-align: start;
+}
+
+.experiencie > article {
+  text-align: start;
+  margin: 20px 0;
+}
+
+.experiencie > article > h4 {
+  font-weight: 500;
+  /* color: #ebf91c; */
+  color: #1ABC9C;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.experiencie > article > h5 {
+  font-weight: 500;
+  font-size: 1rem;
+  /* color: #ebf91c; */
+  color: #1ABC9C;
+  margin: 15px 0 5px 15px;
+}
+
+.experiencie > article > p {
+  color: #2D2D2D;
+  margin-top: 0;
+  margin-left: 15px;
+}
+
+.experiencie > #skills > img {
+  margin: 0 20px;
+}
+
+.experiencie > #skills > h4 {
+  font-weight: 500;
+  color: #1ABC9C;
+}
