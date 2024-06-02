@@ -64,14 +64,13 @@ body{
 }
 
 #buttons > a {
-  width: fit-content;
   height: fit-content;
+  margin: 20px 10px 0 10px;
 }
 
 button {
   border-radius: 5px;
-  padding: 8px;
-  margin: 40px 10px 0 10px;
+  padding: 8px;;
   /* border: 1px solid #b8ea53; */
   border: 1px solid #1ABC9C;
   background-color: transparent;
