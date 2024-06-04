@@ -4,12 +4,10 @@ body{
   font-family: 'Open Sans', sans-serif;
   display: grid;
   place-items: center;
-  /* background-color: #696969; */
   background-color: #FFFFFF;
 }
 
 #section-info {
-  /* background-color: #5c6476; */
   background-color: #2F2F2F;
   width: 100%;
 }
@@ -50,7 +48,6 @@ body{
   display: block;
   font-size: 2.5rem;
   font-weight: bold;
-  /* color: rgb(173 246 99); */
   color: #1ABC9C;
 }
 
@@ -74,18 +71,15 @@ body{
 button {
   border-radius: 5px;
   padding: 8px;;
-  /* border: 1px solid #b8ea53; */
   border: 1px solid #1ABC9C;
   background-color: transparent;
   width: 100px;
-  /* color: #b8ea53; */
   color: #1ABC9C;
   transition: 0.3s color, 0.3s background-color;
   font-size: 0.9rem;
 }
 
 button:hover {
-  /* background-color: #b8ea53; */
   background-color: #1ABC9C;
   color: black;
   cursor: pointer;
@@ -105,7 +99,6 @@ button:hover {
 
 .experiencie {
   margin: 30px 0;
-  /* background-color: #9a9a9a; */
   background-color: #ECF0F1;
   padding: 20px;
   border-radius: 5px;
@@ -123,7 +116,6 @@ button:hover {
 }
 
 .experiencie > header > div > .company-name {
-  /* color: white; */
   font-weight: 500;
   font-size: 1.2rem;
   margin: 0 20px;
@@ -133,7 +125,6 @@ button:hover {
 }
 
 .experiencie > header > div > .date {
-  /* color: white; */
   font-weight: 500;
   font-size: 0.9rem;
   margin: 0 20px;
@@ -149,7 +140,6 @@ button:hover {
 
 .experiencie > article > h4 {
   font-weight: 500;
-  /* color: #ebf91c; */
   color: #1ABC9C;
   margin-bottom: 0;
   font-size: 1.1rem;
@@ -158,7 +148,6 @@ button:hover {
 .experiencie > article > h5 {
   font-weight: 500;
   font-size: 1rem;
-  /* color: #ebf91c; */
   color: #1ABC9C;
   margin: 15px 0 5px 15px;
 }
@@ -177,4 +166,178 @@ button:hover {
   font-weight: 500;
   color: #1ABC9C;
   margin-bottom: 0;
+}
+
+#projects-section {
+  max-width: 960px;
+  text-align: center;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#projects-section > h2 {
+  margin: 30px 0 0 0;
+  color: #1ABC9C;
+  font-weight: 100;
+  width: 100%;
+}
+
+.project-type-one {
+  background-color: #ECF0F1;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.project-type-one > .project-content > article {
+  text-align: start;
+}
+
+.project-type-one > .project-content > h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #1ABC9C;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+}
+
+.project-type-one > .project-content > img {
+  width: 300px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+@media (width < 500px) {
+  .project-type-one > .project-content > img {
+    width: 250px;
+  }
+}
+
+.project-type-one > .project-content > .skills > h4 {
+  font-weight: 500;
+  color: #1ABC9C;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.project-type-one > .project-content > .skills > img {
+  margin: 10px 10px 0px 10px;
+}
+
+.project-type-two {
+  background-color: #ECF0F1;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 30px auto 0 auto;
+}
+
+.project-type-two > .project-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  align-items: center;
+}
+
+.project-type-two > .project-content > .project-description {
+  grid-column: span 1;
+}
+
+.project-type-two > h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #1ABC9C;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+}
+
+.project-type-two > .project-content > .project-description > article {
+  text-align: start;
+}
+
+.project-type-two > .project-content > .project-description > article > h4 {
+  font-weight: 500;
+  color: #1ABC9C;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.project-type-two > .project-content > .features {
+  grid-column: span 1;
+  text-align: start;
+}
+
+.project-type-two > .project-content > .features > h4 {
+  font-weight: 500;
+  color: #1ABC9C;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.project-type-two > .project-content > .features > ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.project-type-two > .project-content > .features > ul > li {
+  margin: 7.5px 0;
+}
+
+.project-type-two > .project-content > .features > .tecnologies-icons {
+  text-align: center;
+}
+
+.project-type-two > .project-content > .features > .tecnologies-icons > img {
+  margin: 10px 10px 0px 10px;
+}
+
+@media (width < 720px) {
+  .project-type-two > .project-content > .project-description {
+    grid-column: span 2;
+  }
+
+  .project-type-two > .project-content > .features {
+    grid-column: span 2;
+  }
+}
+
+#skills-section {
+  max-width: 960px;
+  text-align: center;
+  padding: 15px;
+}
+
+#skills-section > h2 {
+  margin: 30px 0 30px 0;
+  color: #1ABC9C;
+  font-weight: 100;
+}
+
+#skills-section > .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills-section > .skills > .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #ECF0F1;
+  padding: 20px;
+  width: 70px;
+}
+
+#skills-section > .skills > .skill > img {
+  margin-bottom: 5px;
 }
