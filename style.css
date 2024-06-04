@@ -341,3 +341,51 @@ button:hover {
 #skills-section > .skills > .skill > img {
   margin-bottom: 5px;
 }
+
+#about-section {
+  max-width: 960px;
+  text-align: center;
+  padding: 15px;
+}
+
+#about-section > h2 {
+  margin: 30px 0 30px 0;
+  color: #1ABC9C;
+  font-weight: 100;
+}
+
+#about-section > .about-card {
+  background-color: #ECF0F1;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 30px auto 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#about-section > .about-card > img {
+  grid-column: span 1;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 9999px;
+  margin: 10px auto;
+}
+
+#about-section > .about-card > article {
+  text-align: start;
+  grid-column: span 2;
+  margin: 10px;
+  line-height: 20px;
+}
+
+@media (width < 720px) {
+  #about-section > .about-card > img {
+    grid-column: span 3;
+  }
+  #about-section > .about-card > article {
+    grid-column: span 3;
+  }
+}
